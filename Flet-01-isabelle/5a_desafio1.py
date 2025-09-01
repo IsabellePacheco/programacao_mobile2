@@ -7,7 +7,7 @@ def main(page: ft.Page):
 
     #campos do formulario
     campo_nome = ft.TextField(label="Nome Completo", width=300, border_color=ft.Colors.BLUE) 
-    campo_idade = ft.TextField(label="Idade", width=100, border_color=ft.Colors.BLUE, keyboard_type=ft.KeyboardType.NUMBER)
+    campo_idade = ft.TextField(label="Idade", width=300, border_color=ft.Colors.BLUE, keyboard_type=ft.KeyboardType.NUMBER)
 
     dropdown_hobby= ft.Dropdown(
         label="Hobby Favorito",
@@ -114,20 +114,20 @@ def main(page: ft.Page):
     linha_botoes = ft.Row([
         ft.ElevatedButton(
             text="Criar Perfil", on_click=criar_perfil, width=140, 
-            bgcolor=ft.Colors.BLUE,
+            bgcolor=ft.Colors.RED_800,
             color=ft.Colors.WHITE
         ),
         ft.ElevatedButton(
             text="Limpar", on_click=limpar_campos, width=140, 
-            bgcolor=ft.Colors.GREY,
+            bgcolor=ft.Colors.RED_800,
             color=ft.Colors.WHITE
         )
     ], alignment=ft.MainAxisAlignment.CENTER, spacing=20)
         
     #layout principal
     layout_principal = ft.Column([
-        ft.Text("Criador de Perfil", size=26, weight=ft.FontWeight.BOLD, color=ft.Colors.BLUE),
-        ft.Text("Preencha o formulario abaixo:", size=14, color=ft.Colors.GREY_600, text_align=ft.TextAlign.CENTER),
+        ft.Text("Criador de Perfil", size=26, weight=ft.FontWeight.BOLD, color=ft.Colors.PINK),
+        ft.Text("Preencha o formulario abaixo:", size=14, color=ft.Colors.PINK_600, text_align=ft.TextAlign.CENTER),
         ft.Container(height=20),
         campo_nome,
         campo_idade,

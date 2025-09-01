@@ -242,7 +242,8 @@ def main(page: ft.Page):
                 "🦁 Zoológico Virtual", 
                 size=24, 
                 weight=ft.FontWeight.BOLD, 
-                text_align=ft.TextAlign.CENTER
+                text_align=ft.TextAlign.CENTER,
+                color=ft.Colors.PINK
             ),
             
             # Subtítulo explicativo

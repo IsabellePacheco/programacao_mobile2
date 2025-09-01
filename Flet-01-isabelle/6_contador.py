@@ -11,14 +11,14 @@ def main(page: ft.Page):
         value="0",
         size=48,
         weight=ft.FontWeight.BOLD,
-        color=ft.Colors.BLUE,
+        color=ft.Colors.PINK,
         text_align=ft.TextAlign.CENTER
     )
 
     info_contador = ft.Text(
         value="Contador iniciando em 0",
         size=14,
-        color=ft.Colors.GREY_600,
+        color=ft.Colors.RED_400,
         text_align=ft.TextAlign.CENTER
     )
 
@@ -57,7 +57,7 @@ def main(page: ft.Page):
     page.add(
         ft.Column(
             controls=[
-                ft.Text("Contador Completo", size=24, weight=ft.FontWeight.BOLD),
+                ft.Text("Contador Completo", size=24, weight=ft.FontWeight.BOLD, color=ft.Colors.PINK),
                 display_contador,
                 info_contador,
                 ft.Row(
@@ -71,7 +71,7 @@ def main(page: ft.Page):
                     spacing=40
                 ),
 
-                ft.ElevatedButton("Resetar", on_click=resetar, width=120, height=50, bgcolor=ft.Colors.BLUE_400, color=ft.Colors.WHITE)
+                ft.ElevatedButton("Resetar", on_click=resetar, width=120, height=50, bgcolor=ft.Colors.RED, color=ft.Colors.WHITE)
             ],
             horizontal_alignment=ft.CrossAxisAlignment.CENTER,
             spacing=20
@@ -79,4 +79,3 @@ def main(page: ft.Page):
     )
 
 ft.app(target=main)
-            

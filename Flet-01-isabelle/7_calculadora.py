@@ -42,12 +42,12 @@ def main(page: ft.Page):
     page.add(
         ft.Column(
             [
-                ft.Text("Calculadora Simples", size=24, weight=ft.FontWeight.BOLD),
+                ft.Text("Calculadora Simples", size=24, weight=ft.FontWeight.BOLD, color=ft.Colors.PINK),
                 numero1, numero2, operacao,
                 ft.Row(
                     [
-                        ft.ElevatedButton("Calcular", on_click=calcular, width=150, bgcolor=ft.Colors.GREEN, color=ft.Colors.WHITE),
-                        ft.ElevatedButton("Limpar", on_click=limpar, width=150, bgcolor=ft.Colors.GREY, color=ft.Colors.WHITE)
+                        ft.ElevatedButton("Calcular", on_click=calcular, width=150, bgcolor=ft.Colors.RED, color=ft.Colors.WHITE),
+                        ft.ElevatedButton("Limpar", on_click=limpar, width=150, bgcolor=ft.Colors.RED_100, color=ft.Colors.WHITE)
                     ], alignment=ft.MainAxisAlignment.CENTER, spacing=20),
                 ft.Divider(),
                 resultado

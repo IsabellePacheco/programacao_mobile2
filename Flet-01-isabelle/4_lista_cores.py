@@ -13,9 +13,9 @@ def main(page: ft.Page):
             text_align=ft.TextAlign.CENTER
         ),
 
-        width=300,
+        width=150,
         height=100,
-        bgcolor=ft.Colors.GREY,
+        bgcolor=ft.Colors.PINK_300,
         border_radius=10,
         alignment=ft.alignment.center       
     )
@@ -40,7 +40,7 @@ def main(page: ft.Page):
 
         #mudando a cor da caixa 
         caixa_colorida.bgcolor = cores_disponiveis[cor_escolhida]
-        caixa_colorida.content.value = f"cor selecionada {cor_escolhida}"
+        caixa_colorida.content.value = f"cor selecionada {cor_escolhida}:"
 
         page.update()
 
@@ -61,9 +61,10 @@ def main(page: ft.Page):
 
     #adicionar elementos a pagina
     page.add(
-        ft.Text("Selecione uma cor da lista abaixo:", size=24, weight=ft.FontWeight.BOLD),
+        ft.Text("Selecione uma cor da lista abaixo:", size=24, weight=ft.FontWeight.BOLD, color=ft.Colors.PINK),
         seletor_cor,
         caixa_colorida
+        
     )
 
 ft.app(target=main)

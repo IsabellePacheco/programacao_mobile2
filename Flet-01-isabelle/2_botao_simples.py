@@ -1,16 +1,15 @@
 import flet as ft
 
 def main(page: ft.Page):
-    page.title = "Meu Primeiro Botao "
+    page.title = "Meu Primeiro Botão "
     page.padding = 20
 
     #criando um texto que sera modificado pelo botao 
     mensagem = ft.Text(
-        value="Clique no botao abaixo!", 
+        value="Clique no botão abaixo!", 
         size=20, 
         text_align=ft.TextAlign.CENTER,
-        color=ft.Colors.BLUE
-    )
+        color=ft.Colors.PINK    )
 
     def botao_clicado(evento):
         """
@@ -19,8 +18,8 @@ def main(page: ft.Page):
         """
 
         #mudando o texto da mensagem
-        mensagem.value = "Parabens voce clicou no botao !"
-        mensagem.color = ft.Colors.GREEN
+        mensagem.value = "Parabéns você clicou no botão!"
+        mensagem.color = ft.Colors.BLUE_300
 
         #importante: sempre que modificamos elementos da interface, precisamos chamar page.update() para que as mudanças aparecam na tela 
 
@@ -32,8 +31,8 @@ def main(page: ft.Page):
         on_click=botao_clicado, #função que sera chamada quando o botao for clicado
         width=200, #largura botao
         height=50, #altura botao
-        bgcolor=ft.Colors.BLUE, #cor de fundo
-        color=ft.Colors.WHITE #cor do texto
+        bgcolor=ft.Colors.PINK_300, #cor de fundo
+        color=ft.Colors.WHITE#cor do texto  
     )
 
     #adicionando elementos a pagina

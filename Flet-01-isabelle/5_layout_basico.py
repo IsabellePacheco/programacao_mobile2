@@ -11,16 +11,16 @@ def main(page: ft.Page):
         "Organizando Elementos na Tela", 
         size=24, 
         weight=ft.FontWeight.BOLD,
-        color=ft.Colors.BLUE,
+        color=ft.Colors.PINK,
         text_align=ft.TextAlign.CENTER
     )
 
     #criando uma linha horizoltal com 3 botoes
     linha_botoes = ft.Row(
         controls=[
-            ft.ElevatedButton(text="Botao 1", bgcolor=ft.Colors.BLUE, color=ft.Colors.WHITE, width=100),
-            ft.ElevatedButton(text="Botao 2", bgcolor=ft.Colors.GREEN, color=ft.Colors.WHITE, width=100),
-            ft.ElevatedButton(text="Botao 3", bgcolor=ft.Colors.ORANGE, color=ft.Colors.WHITE, width=100),
+            ft.ElevatedButton(text="Botao 1", bgcolor=ft.Colors.RED_200, color=ft.Colors.WHITE, width=100),
+            ft.ElevatedButton(text="Botao 2", bgcolor=ft.Colors.RED_400, color=ft.Colors.WHITE, width=100),
+            ft.ElevatedButton(text="Botao 3", bgcolor=ft.Colors.RED_800, color=ft.Colors.WHITE, width=100),
         ],
         alignment=ft.MainAxisAlignment.CENTER, #espaco entre os botoes
         spacing=20 #espaco entre os botoes
@@ -29,7 +29,7 @@ def main(page: ft.Page):
     #criando caizas coloridas em colunas 
     caixa1 = ft.Container(
         content=ft.Text("Caixa 1", color=ft.Colors.WHITE,),
-        bgcolor=ft.Colors.PURPLE,
+        bgcolor=ft.Colors.RED_200,
         width=200,
         height=50,
         alignment=ft.alignment.center,
@@ -38,7 +38,7 @@ def main(page: ft.Page):
 
     caixa2 = ft.Container(
         content=ft.Text("Caixa 2", color=ft.Colors.WHITE,),
-        bgcolor=ft.Colors.ORANGE,
+        bgcolor=ft.Colors.RED_400,
         width=200,
         height=50,
         alignment=ft.alignment.center,
@@ -56,11 +56,11 @@ def main(page: ft.Page):
     layout_principal = ft.Column(
         controls=[
             titulo, 
-            ft.Text("Linha horizontal de botoes", size=16,),
+            ft.Text("Linha horizontal de botões", size=16, color=ft.Colors.BLUE_200),
             linha_botoes,
-            ft.Text("Coluna de caixas coloridas", size=16,),
+            ft.Text("Coluna de caixas coloridas", size=16, color=ft.Colors.BLUE_200),
             coluna_caixas,
-            ft.Text("Layout organizado!", size=14, color=ft.Colors.GREEN)
+            ft.Text("Layout organizado!", size=14, color=ft.Colors.BLUE_400)
         ],
         
         horizontal_alignment=ft.CrossAxisAlignment.CENTER,

@@ -14,7 +14,7 @@ def main(page: ft.Page):
     meu_texto = ft.Text(
         value="Hello world!", #texto exibido
         size=24, #fonte
-        color=ft.Colors.BLUE, #cor
+        color=ft.Colors.PINK, #cor
         weight=ft.FontWeight.BOLD, #negrito
         text_align=ft.TextAlign.CENTER #alinhamento
     )
@@ -24,8 +24,8 @@ def main(page: ft.Page):
 
     #mais elementos 
     page.add(
-        ft.Text(" Bem vindo ao mundo do desenvolvimento mobile!", size=16),
-        ft.Text(" ComFlet, você pode criar apps incríveis!", size=16, color=ft.Colors.GREEN)
+        ft.Text(" Bem vindo ao mundo do desenvolvimento mobile!", size=20 , color=ft.Colors.BLACK),
+        ft.Text(" Com Flet, você pode criar apps incríveis!", size=16, color=ft.Colors.BLUE)
     )
 
 #esta linha inicia nosso aplicativo, chamando a funcao main

@@ -54,7 +54,7 @@ def main(page: ft.Page):
     # Interface
     page.add(
         ft.Column([
-            ft.Text("⚙️ Painel de Configuração", size=24, weight=ft.FontWeight.BOLD),
+            ft.Text("⚙️ Painel de Configuração", size=24, weight=ft.FontWeight.BOLD,color=ft.Colors.PINK),
             ft.Text("Configure o texto abaixo:", size=14),
             area_preview,
             ft.Divider(),

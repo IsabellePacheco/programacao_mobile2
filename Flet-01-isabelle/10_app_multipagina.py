@@ -62,7 +62,7 @@ def main(page: ft.Page):
             ),
             padding=ft.padding.only(top=20)  # Aqui é o padding top só no texto
         ),
-        bgcolor=ft.Colors.BLUE,
+        bgcolor=ft.Colors.PINK,
         padding=20,
         alignment=ft.alignment.center
     )
@@ -83,7 +83,7 @@ def main(page: ft.Page):
                 padding=ft.padding.symmetric(vertical=8, horizontal=16),
                 border_radius=12,
                 bgcolor=ft.Colors.TRANSPARENT,
-                animate=ft.animation.Animation(200, ft.AnimationCurve.EASE_OUT)
+                animate=ft.Animation(200, ft.AnimationCurve.EASE_OUT)
             ),
             on_tap=on_click_func
         )
@@ -111,10 +111,10 @@ def main(page: ft.Page):
             
             if pagina_atual == pagina_nome:
                 # Item ativo - destaque
-                container.bgcolor = ft.Colors.BLUE_50
-                container.border = ft.border.all(2, ft.Colors.BLUE_200)
-                icone.color = ft.Colors.BLUE
-                texto.color = ft.Colors.BLUE
+                container.bgcolor = ft.Colors.PINK_50
+                container.border = ft.border.all(2, ft.Colors.PINK_200)
+                icone.color = ft.Colors.PINK
+                texto.color = ft.Colors.PINK
                 texto.weight = ft.FontWeight.BOLD
             else:
                 # Item inativo
@@ -146,11 +146,11 @@ def main(page: ft.Page):
     conteudo_home = ft.Container(
         content=ft.Column(
             controls=[
-                ft.Icon(ft.Icons.HOME, size=80, color=ft.Colors.BLUE),
-                ft.Text("Bem-vindo ao App! 🎉", size=28, weight=ft.FontWeight.BOLD),
+                ft.Icon(ft.Icons.HOME, size=80, color=ft.Colors.PINK),
+                ft.Text("Bem-vindo ao App! 🎉", size=28, weight=ft.FontWeight.BOLD, color=ft.Colors.PINK),
                 ft.Text("Navegue pelas páginas usando a barra inferior", size=16, text_align=ft.TextAlign.CENTER),
                 ft.Container(height=20),
-                ft.Text("🎯 Toque nos ícones da barra para navegar!", size=14, color=ft.Colors.BLUE_600)
+                ft.Text("🎯 Toque nos ícones da barra para navegar!", size=14, color=ft.Colors.PINK_600)
             ],
             horizontal_alignment=ft.CrossAxisAlignment.CENTER,
             spacing=15
@@ -172,17 +172,17 @@ def main(page: ft.Page):
             controls=[
                 ft.CircleAvatar(
                     content=ft.Icon(ft.Icons.PERSON, size=50, color=ft.Colors.WHITE),
-                    bgcolor=ft.Colors.BLUE,
+                    bgcolor=ft.Colors.PINK,
                     radius=60
                 ),
                 ft.Text(dados_usuario["nome"], size=24, weight=ft.FontWeight.BOLD),
-                ft.Text(f"Nível: {dados_usuario['nivel']}", size=16, color=ft.Colors.BLUE_600),
+                ft.Text(f"Nível: {dados_usuario['nivel']}", size=16, color=ft.Colors.PINK_600),
                 texto_pontos,
                 ft.Container(height=20),
                 ft.ElevatedButton(
                     "Ganhar Pontos! 🎯",
                     on_click=adicionar_pontos,
-                    bgcolor=ft.Colors.GREEN,
+                    bgcolor=ft.Colors.PINK,
                     color=ft.Colors.WHITE
                 )
             ],
@@ -207,7 +207,7 @@ def main(page: ft.Page):
     conteudo_config = ft.Container(
         content=ft.Column(
             controls=[
-                ft.Icon(ft.Icons.SETTINGS, size=60, color=ft.Colors.BLUE),
+                ft.Icon(ft.Icons.SETTINGS, size=60, color=ft.Colors.PINK),
                 ft.Text("Configurações ⚙️", size=24, weight=ft.FontWeight.BOLD),
                 ft.Container(height=20),
                 ft.Switch(
@@ -233,8 +233,8 @@ def main(page: ft.Page):
     conteudo_sobre = ft.Container(
         content=ft.Column(
             controls=[
-                ft.Icon(ft.Icons.INFO, size=60, color=ft.Colors.BLUE),
-                ft.Text("Sobre o App ℹ️", size=24, weight=ft.FontWeight.BOLD),
+                ft.Icon(ft.Icons.INFO, size=60, color=ft.Colors.PINK),
+                ft.Text("Sobre o App ℹ️", size=24, weight=ft.FontWeight.BOLD, color=ft.Colors.PINK),
                 ft.Container(height=20),
                 ft.Text("Versão: 1.0.0", size=16),
                 ft.Text("Desenvolvido com Flet", size=16),
