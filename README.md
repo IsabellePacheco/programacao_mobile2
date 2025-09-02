@@ -58,5 +58,6 @@
 
 # Desafio: CRIAR LOJA VIRTUAL
 >Protótipo de e-commerce que exibe produtos em cards coloridos, com busca, filtros por categoria e preço e opção de limpar filtros.
-<img width="1918" height="1006" alt="image" src="https://github.com/user-attachments/assets/23a2beb3-b5b6-4103-9b3d-dbfa98e75a87" />
+<img width="1900" height="996" alt="image" src="https://github.com/user-attachments/assets/05a17337-a95b-4b7a-96f7-6a0df047f478" />
+
 
