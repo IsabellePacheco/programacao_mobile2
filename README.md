@@ -7,7 +7,7 @@
 
 # PASSO A PASSO para configurar o python
 - python -m venv .venv
-- .venv\Scripts\activate
+- .venv\Scripts\activate 
 - pip install flet-desktop
 - pip show flet (verificação)
 
@@ -60,4 +60,13 @@
 >Protótipo de e-commerce que exibe produtos em cards coloridos, com busca, filtros por categoria e preço e opção de limpar filtros.
 <img width="1900" height="996" alt="image" src="https://github.com/user-attachments/assets/05a17337-a95b-4b7a-96f7-6a0df047f478" />
 
+## Flet-02
+# DESAFIO: Calculadora de IMC
+>A aplicação possui uma interface simples e intuitiva, permitindo que o usuário calcule rapidamente seu Índice de Massa Corporal (IMC), com campos de peso e altura, exibição do resultado e alternância entre tema claro e escuro.
+
+### TELA CLARA
+<img width="1919" height="1004" alt="image" src="https://github.com/user-attachments/assets/c9a44872-33f3-4b35-8f08-ffe142488e4f" />
+
+### TELA ESCURA
+<img width="1919" height="1005" alt="image" src="https://github.com/user-attachments/assets/317293ad-b201-47c9-82bb-cf00566a5a52" />
 
