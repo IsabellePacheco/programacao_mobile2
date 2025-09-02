@@ -5,7 +5,7 @@ def main(page: ft.Page):
     page.title = "Loja Virtual "
     page.padding = ft.padding.only(top=40, left=20, right=20, bottom=20)
     page.scroll = ft.ScrollMode.AUTO
-    page.bgcolor = ft.Colors.PINK_50
+    page.bgcolor = ft.Colors.WHITE
 
     # Estado do carrinho
     carrinho = []
