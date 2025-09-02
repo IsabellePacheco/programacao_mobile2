@@ -62,13 +62,11 @@
 
 ## Flet-02
 # DESAFIO: Calculadora de IMC
->A aplicação possui uma interface simples e intuitiva, permitindo que o usuário calcule rapidamente seu Índice de Massa Corporal (IMC).
+>A aplicação possui uma interface simples e intuitiva, permitindo que o usuário calcule rapidamente seu Índice de Massa Corporal (IMC), com campos de peso e altura, exibição do resultado e alternância entre tema claro e escuro.
+
 ### TELA CLARA
 <img width="1919" height="1004" alt="image" src="https://github.com/user-attachments/assets/c9a44872-33f3-4b35-8f08-ffe142488e4f" />
+
 ### TELA ESCURA
 <img width="1919" height="1005" alt="image" src="https://github.com/user-attachments/assets/317293ad-b201-47c9-82bb-cf00566a5a52" />
-
-<img width="1919" height="998" alt="image" src="https://github.com/user-attachments/assets/588b2f92-6555-46d7-95e9-d058dc80ff9c" />
-
-<img width="1919" height="1007" alt="image" src="https://github.com/user-attachments/assets/d42871f9-ef08-4642-a107-03dfd6df9b7e" />
 
