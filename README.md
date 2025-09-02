@@ -7,7 +7,7 @@
 
 # PASSO A PASSO para configurar o python
 - python -m venv .venv
-- .venv\Scripts\activate
+- .venv\Scripts\activate 
 - pip install flet-desktop
 - pip show flet (verificação)
 
