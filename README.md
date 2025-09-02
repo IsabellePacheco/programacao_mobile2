@@ -1,5 +1,4 @@
-# programacao_mobile2
-
+# PROGRAMAÇÃO MOBILE
 
 # O que é PYTHON
 > Python é uma linguagem de programação de alto nível, criada em 1991 por Guido van Rossum, conhecida pela simplicidade e versatilidade. Com sintaxe fácil de aprender, é interpretada, multiparadigma e portátil, funcionando em diferentes sistemas. Possui inúmeras bibliotecas e frameworks, sendo usada em áreas como desenvolvimento web, ciência de dados, inteligência artificial e automação, o que a torna uma das linguagens mais populares atualmente.
